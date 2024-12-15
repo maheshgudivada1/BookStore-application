@@ -1,0 +1,49 @@
+.top-header-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    background-color: white !important;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .left-options {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .right-options {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .icon-link {
+    text-decoration: none;
+    color: blue;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .icon-link:hover {
+    color: darkblue; 
+  }
+  
+  .icon-label i {
+    color: black; 
+    margin-right: 8px; 
+    font-size: 18px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .top-header-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .left-options,
+    .right-options {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }

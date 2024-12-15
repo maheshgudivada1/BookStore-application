@@ -1,0 +1,141 @@
+.contact-container {
+  background-image:url('https://hongyanpak.com/wp-content/uploads/2023/06/Contact-With-Us.jpg');
+  padding: 200px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: white;
+  max-width: 100%;
+  background-size: cover;
+}
+.contact-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://steatite.co.uk/wp-content/uploads/Contact-Us-Banner.png') center/cover no-repeat;
+  padding: 130px 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: white;
+  max-width: 900px;
+  margin: 40px auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffbf00;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #ffbf00;
+}
+
+/* Form styling */
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #ffbf00;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid #ffbf00;
+  box-shadow: 0 0 8px rgba(255, 191, 0, 0.7);
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #ffbf00;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #ff9e00;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+      padding: 30px 15px;
+      background-position: center;
+  }
+
+  .contact-header h2 {
+      font-size: 2rem;
+  }
+
+  .contact-header p {
+      font-size: 1rem;
+  }
+
+  .contact-form {
+      padding: 30px;
+  }
+
+  .submit-btn {
+      padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header h2 {
+      font-size: 1.8rem;
+  }
+
+  .contact-header p {
+      font-size: 0.9rem;
+  }
+
+  .submit-btn {
+      padding: 10px 15px;
+  }
+}

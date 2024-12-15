@@ -1,0 +1,204 @@
+.privacy-policy-container1 {
+  background-image: url('https://skyassuredsolutions.com/wp-content/uploads/2022/07/Privacy-Policy-banner.jpeg'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  width: 100%; 
+  height: 300px;
+  margin: 0 auto; 
+ 
+  overflow: hidden; 
+}
+
+
+
+.contact-banner {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.contact-banner p {
+  font-size: 1.2em;
+}
+
+.privacy-policy-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-policy-header {
+  font-size: 3em;
+  text-align: center;
+  color: #0073e6;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.intro {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: justify;
+  color: #555;
+  padding-right: 20px;
+  letter-spacing: 0.5px;
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: #0073e6;
+  font-weight: 500;
+}
+
+.section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+}
+
+.section a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+.toggle-btn {
+  background-color: #0073e6;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  font-size: 1.1em;
+  margin-top: 30px;
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toggle-btn:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.additional-info {
+  background-color: #eef4f8;
+  padding: 20px;
+  border-left: 5px solid #0073e6;
+  margin-top: 30px;
+  transition: opacity 0.3s ease;
+}
+
+.additional-info h2 {
+  font-size: 1.6em;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+.additional-info p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .privacy-policy-container {
+    padding: 20px;
+  }
+
+  .privacy-policy-header {
+    font-size: 2.5em;
+  }
+
+  .section h2 {
+    font-size: 1.4em;
+  }
+
+  .section p {
+    font-size: 1.1em;
+  }
+
+  .toggle-btn {
+    font-size: 1em;
+    padding: 10px 20px;
+    width: 180px;
+  }
+
+  .privacy-policy-container1 {
+    height: 250px;
+  }
+
+  .contact-banner h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-policy-container {
+    padding: 15px;
+  }
+
+  .privacy-policy-header {
+    font-size: 2em;
+  }
+
+  .intro, .section p {
+    font-size: 1em;
+  }
+
+  .toggle-btn {
+    width: 100%;
+    font-size: 1.1em;
+    padding: 12px;
+  }
+
+  .privacy-policy-container1 {
+    height: 200px;
+  }
+
+  .contact-banner h1 {
+    font-size: 1.8em;
+  }
+}

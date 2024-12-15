@@ -1,0 +1,18 @@
+.teasing-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+    background-color: #333 !important; 
+    color: #fff; 
+  }
+  
+  .teasing-component a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .teasing-component a:hover {
+    text-decoration: underline;
+  }

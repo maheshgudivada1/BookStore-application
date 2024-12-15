@@ -1,0 +1,128 @@
+/* General Styles */
+.cart-dropdown {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    z-index: 10;
+    text-align: center;
+    max-height: 80vh;
+    overflow-y: auto;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-20px); /* Start slightly above */
+  }
+  
+  /* Show cart dropdown when the cart icon is hovered */
+  .cart-icon:hover + .cart-dropdown, 
+  .cart-dropdown:hover {
+    opacity: 1;
+    transform: translateY(0); /* Move into position */
+  }
+  
+  /* Cart Header */
+  .cart-dropdown h2 {
+    font-size: 20px;
+    color: green;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* Cart Items List */
+  .cart-items-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Cart Item */
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .cart-item:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Cart Item Title */
+  .cart-item h4 {
+    font-size: 18px;
+    color: #2d2d2d;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  /* Cart Item Description */
+  .cart-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Cart Item Controls */
+  .cart-item-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .cart-item-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-item-controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cart-item-controls span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .cart-item-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .cart-item-controls button:disabled:hover {
+    background-color: #ccc;
+  }
+  
+  /* Empty Cart Styles */
+  .cart-dropdown p {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+  }
+  
+  /* Cart Item Controls - Centered */
+  .cart-item-controls {
+    justify-content: center;
+  }
+  .name{
+    color: black !important;
+  }
+  .published{
+    color: black !important;
+  }

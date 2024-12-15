@@ -1,0 +1,125 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: nowrap; /* Keep elements in a row */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.logo img {
+  height: 50px; /* Default logo size */
+  margin-right: 20px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cart-icon-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon {
+  font-size: 24px; /* Default icon size */
+  margin-left: 20px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+/* Responsive adjustments for large mobile devices */
+@media (max-width: 768px) {
+  .header-content {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .logo img {
+    height: 40px; /* Slightly smaller logo */
+    margin-right: 10px;
+  }
+
+  .search-bar {
+    margin: 0 10px;
+  }
+
+  .search-input {
+    font-size: 14px; /* Smaller font size for the input */
+    padding: 6px;
+  }
+
+  .cart-icon {
+    font-size: 20px; /* Smaller cart icon */
+    margin-left: 10px;
+  }
+
+  .cart-count {
+    font-size: 10px; /* Smaller cart count */
+    top: -6px;
+    right: -6px;
+    padding: 1px 4px;
+  }
+}
+
+/* Additional adjustments for very small screens (below 480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 5px 10px;
+  }
+
+  .header-content {
+    flex-direction: row; /* Stack items in column */
+    align-items: center;
+  }
+
+  .logo img {
+    height: 35px; /* Further reduce logo size */
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .search-input {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .cart-icon {
+    font-size: 18px; /* Smaller icon for tiny screens */
+  }
+
+  .cart-count {
+    font-size: 9px;
+    top: -5px;
+    right: -5px;
+  }
+}

@@ -1,0 +1,163 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.book-details {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.book-cover {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.add-to-cart {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.add-to-cart-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838;
+}
+
+.add-to-cart-btn:focus {
+  outline: none;
+}
+@media (max-width: 1200px) {
+  .books-list {
+    grid-template-columns: repeat(5, 1fr); /* Two books per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .books-list {
+    grid-template-columns: repeat(2, 1fr); /* Two books per row on medium devices */
+  }
+
+  select {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+select, .books-list li {
+  transition: all 0.3s ease-in-out;
+}
+/* Styles for iPads and iPad Pro in portrait and landscape orientations */
+
+/* Target iPads with width between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Ensure the books list doesn't overflow */
+  .books-list {
+    grid-template-columns: repeat(4, 1fr); /* Adjust grid to 2 columns */
+    padding: 10px; /* Add padding to prevent overflow */
+    margin: 0 auto; /* Center content */
+    max-width: 100%; /* Ensure the grid doesn't exceed page width */
+  }
+
+  /* Adjust the width of individual book items */
+  .book-item {
+    width: 100%; /* Make sure book items take up available width */
+    margin: 10px auto; /* Center book items and avoid overflow */
+  }
+
+  /* Ensure select elements fit well on the page */
+  select {
+    width: 100%;
+    max-width: 300px; /* Restrict the max width */
+  }
+
+  /* Ensure header search input is responsive */
+  .header-search {
+    width: 100%; /* Take up the full width of the container */
+    max-width: 600px; /* Restrict maximum width */
+  }
+
+  /* Adjust book details layout for iPads */
+  .book-details {
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 95%; /* Prevent book details from extending too wide */
+  }
+}
+
+/* For iPad Pro (Landscape mode, larger screens) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .books-list {
+    grid-template-columns: repeat(4, 1fr); /* Display 3 books per row */
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .book-item {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  select {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .header-search {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .book-details {
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 95%;
+  }
+}

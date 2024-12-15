@@ -1,0 +1,172 @@
+.book-item {
+  list-style: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  margin: 10px;
+  width: 225px;
+  border-radius: 0px !important;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensure content aligns properly without hard height */
+}
+
+/* Book cover */
+.book-cover {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Book details - Flexbox for alignment */
+.book-details {
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 200px;
+  justify-content: space-between; /* Align heading and text at the top, button at the bottom */
+}
+
+/* Heading and paragraph styles */
+.book-details h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.book-details p {
+  font-size: 16px;
+  color: #555 !important;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  flex-grow: 1; /* Allow the paragraph to expand naturally */
+  margin-bottom: 15px; /* Add space between the paragraph and the button */
+  
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  width: 100%;
+  margin-top: auto;
+  cursor: pointer;
+  background-color: #333;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .book-item {
+    width: 200px;
+    margin: 15px;
+  }
+
+  .book-details h3 {
+    font-size: 18px;
+  }
+
+  .book-details p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .book-item {
+    width: 180px;
+  }
+
+  .book-details h3 {
+    font-size: 16px;
+  }
+
+  .book-details p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .book-item {
+    width: 100%; /* Full width on tablets */
+    margin: 10px;
+  }
+
+  .book-details h3 {
+    font-size: 18px;
+  }
+
+  .book-details p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-item {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .book-details h3 {
+    font-size: 16px;
+  }
+
+  .book-details p {
+    font-size: 12px;
+  }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .book-item {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .book-cover {
+    border-bottom: 2px solid #444;
+  }
+
+  .book-details {
+    background-color: #444;
+  }
+
+  .book-details h3 {
+    color: #66d9ef;
+  }
+
+  .book-details p {
+    color: #ccc;
+  }
+}
+
+/* Ensure consistent alignment for heading, paragraph, and button */
+.book-details p:last-child {
+  font-size: 14px;
+  color: black;
+}
+
+.book-item img {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button alignment */
+.details-button {
+  padding: 10px 20px;
+}

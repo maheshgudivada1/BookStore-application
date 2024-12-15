@@ -1,0 +1,138 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.footer-container h2 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.contact-info, .about-us, .our-location {
+  flex: 1;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: start !important;
+  margin: 20px;
+  color: #fff;
+  min-width: 280px; /* Ensures a minimum width for each section */
+}
+
+.about-us img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.our-location iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  background-color: black;
+  width: 100%;
+  font-size: 14px;
+}
+
+.bottom-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 40px;
+
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets and large mobile screens (max-width 1024px) */
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info, .about-us, .our-location {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .about-us img {
+    width: 130px; /* Slightly reduce image size for tablets */
+  }
+
+  .our-location iframe {
+    height: 250px;
+  }
+}
+
+/* For small mobile devices (max-width 768px) */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .contact-info, .about-us, .our-location {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+
+  .about-us img {
+    width: 120px; /* Further reduce image size for mobile */
+  }
+
+  .our-location iframe {
+    height: 220px; /* Adjust iframe height for mobile */
+  }
+
+  .copyright {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
+
+/* For very small screens (max-width 480px) */
+@media screen and (max-width: 480px) {
+  .footer-container {
+    padding: 10px;
+  }
+
+  .contact-info, .about-us, .our-location {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .about-us img {
+    width: 100px; /* Further reduce image size for very small screens */
+  }
+
+  .our-location iframe {
+    height: 200px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+}
+p{
+  color: #fff !important;
+}
